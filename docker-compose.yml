@@ -1,0 +1,7 @@
+version: "3"
+services:
+  container:
+    build:
+      context: .
+    image: ${CONTAINER_NAME:-container}
+    container_name: ${CONTAINER_NAME:-container}

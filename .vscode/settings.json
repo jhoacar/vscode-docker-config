@@ -1,0 +1,10 @@
+{
+    "terminal.integrated.profiles.linux": {
+        "container": {
+            "path": "${wokspaceDir}/init.sh",
+            "icon": "code",
+            "overrideName": true,
+            "color": "terminal.ansiCyan"
+        }
+    }
+}
