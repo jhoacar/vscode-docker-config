@@ -1,10 +1,13 @@
 {
-    "terminal.integrated.profiles.linux": {
-        "container": {
-            "path": "${wokspaceDir}/init.sh",
-            "icon": "code",
-            "overrideName": true,
-            "color": "terminal.ansiCyan"
-        }
+  "terminal.integrated.profiles.linux": {
+    "container": {
+      "path": "${workspaceFolder}/init.sh",
+      "icon": "code",
+      "overrideName": true,
+      "color": "terminal.ansiCyan"
     }
+  },
+  "terminal.integrated.defaultProfile.linux": "container",
+  "terminal.integrated.fontFamily": "monospace, 'FontAwesome', 'Font Awesome 6 Free', 'Font Awesome 6 Brands'",
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'FontAwesome', 'Font Awesome 6 Free', 'Font Awesome 6 Brands'"
 }
