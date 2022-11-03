@@ -25,5 +25,5 @@ golang_version(){
     echo -n "\[\e[36m\] $GOLANG_ICON. $(go version | awk '{print $3}' | grep -Eo '[0-9.]*' 2>/dev/null)"
 }
 
-echo -e $(golang_version)
+echo -n $(golang_version)
 
