@@ -7,7 +7,23 @@
       "color": "terminal.ansiCyan"
     }
   },
-  "terminal.integrated.defaultProfile.linux": "container",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": ["${workspaceFolder}/init.sh"],
+      "icon": "code",
+      "overrideName": true,
+      "color": "terminal.ansiCyan"
+    }
+  },
+  "terminal.integrated.profiles.osx": {
+    "container": {
+      "path": "${workspaceFolder}/init.sh",
+      "icon": "code",
+      "overrideName": true,
+      "color": "terminal.ansiCyan"
+    }
+  },
   "terminal.integrated.fontFamily": "monospace, 'FontAwesome', 'Font Awesome 6 Free', 'Font Awesome 6 Brands'",
   "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'FontAwesome', 'Font Awesome 6 Free', 'Font Awesome 6 Brands'"
 }

@@ -1,15 +1,12 @@
 version: "3"
 services:
   container:
-    build:
-      context: .
-      args:
-        - DOCKER_IMAGE=${DOCKER_IMAGE:-ubuntu}
-        - UID=${UID:-1000}
-        - USER=${USER:-dev}
-    image: container_image
+    image: ${DOCKER_IMAGE:-ubuntu}
     container_name: ${CONTAINER_NAME:-container}
+    working_dir: ${CONTAINER_PATH:-/app}
     command: tail -f /dev/null
+    user: root
+    environment:
+      CONTAINER_PATH: ${CONTAINER_PATH:-/app}
     volumes:
       - .:${CONTAINER_PATH:-/app}
-      - ./docker/user:/home/${USER:-dev}
