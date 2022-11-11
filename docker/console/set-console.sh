@@ -1,3 +1,5 @@
+#!/bin/bash
+
 [ -z "$PS1" ] && return
 
 parse_git_branch(){
