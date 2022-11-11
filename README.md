@@ -4,7 +4,7 @@
 
 ## Instalation
 
-* Copy the [.vscode/settings](.vscode/settings) in your project
+* Copy the [.vscode/settings.json](.vscode/settings.json) in your project
 * Copy the [docker/console](docker/console) folder in your workspace folder
 * Copy the [init.sh](init.sh) and the [docker-compose-container.yml](docker-compose-container.yml)
 * Create or copy the [.env](.env) file for custom configuration
